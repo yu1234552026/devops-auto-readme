@@ -1,0 +1,23 @@
+name: Update README Activity
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.REPO_TOKEN }}
+
+      - name: Update README activity
+        uses: TheDanniCraft/activity-log@v1
+        with:
+          GITHUB_USERNAME: yu1234552026
+          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
