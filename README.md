@@ -16,4 +16,4 @@ DevOps Assignment 3 - Auto-Updating README via GitHub Actions
 8. 👤 Assigned issue #6 in [studyspace-b11309055/studyspace-jira](https://github.com/studyspace-b11309055/studyspace-jira/issues/6)
 9. 👤 Assigned issue #6 in [studyspace-b11309055/studyspace-jira](https://github.com/studyspace-b11309055/studyspace-jira/issues/6)
 10. ❌ Closed issue #7 in [studyspace-b11309055/studyspace-jira](https://github.com/studyspace-b11309055/studyspace-jira/issues/7)
-<!--END_SECTION:activity-->
+
