@@ -1,0 +1,24 @@
+name: Validate README Markers
+
+on:
+  push:
+    branches:
+      - main
+      - 1-implement-automated-readme-activity-updates
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate README markers
+        run: |
+          grep -q '<!--START_SECTION:activity-->' README.md
+          grep -q '<!--END_SECTION:activity-->' README.md
